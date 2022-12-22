@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="author" content="Captain Sanchez">
+			<meta name="title" content="The Football Arena">
+				<meta name="description" content="A football website for all football funs">
+					<meta name="keywords" content="football arena,football lovers, football website">
+						<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>THE FOOTBALL ARENA</title>
+    <style>
+	img {
+	opacity: 0.5;
+	}
+		
+	img:hover {
+	opacity: 1.0;
+	}
+	</style>
+	<style>
+	img{
+	border: 2px dashed blue;
+	padding:4px;
+	border-radius:50px;                                                                                                                                                                                                       
+	}
+	</style>
+	<style>
+	img{
+	margin:15px 5px 15px 5px;
+	}
+	</style>
+
+	<style>
+	img{
+	transition: 0.7s;
+		
+	}
+	img:hover{
+	transform: scale(1.2);
+	}
+	</style>
+
+	<style>
+	video{
+	float:left;		
+	}
+	</style>
+
+	<style>
+	video{
+	transition: 0.7s;
+	}
+	video:hover{
+	transform: scale(1.1);
+	}
+	</style>
+
+	<style>
+	video{
+	border:2px dashed blue;
+	padding:4px;
+	border-radius:20px;
+	}
+	</style>
+	
+	<style>
+	video{
+	margin:15px 5px 15px 5px;
+	}
+	</style>
+	
+	<style>
+	.container {
+	position: relative;
+	}
+
+	.box1{
+	position: relative;
+	z-index: 1;
+	background:lightgreen;
+	border: 2px solid black;
+	height:50px;
+	margin: 30px;
+	}
+
+	.box2 {
+	position: absolute;
+	z-index: 3;
+	background: skyblue;
+	height: 50px;  
+	width: 80%;
+	left: 50px;
+	top: 50px;
+	}
+		
+	.box3 {
+	position: absolute;
+	z-index: 2;
+	background:red;
+	width: 300px;
+	left: 200px;
+	top: -20px;
+	
+	height: 100px;
+	}
+	</style>
+	<style>
+	#OverFlowTest{
+	background:#4CAF50;
+	color: white;
+	padding: 15px;
+	width: 50%;
+	height: 100px;
+	overflow:scroll;
+	border: 1px solid #ccc;
+	}
+	</style>
+	<style>
+.{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+
+}
+html,body{
+	display:grid;
+	height:100%;
+	place-items:center;
+	background:rgb(170, 199, 9);
+}
+.center{
+	display:flex;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+.outer{
+	position:relative;
+	margin:0 50px;
+	background:#111;
+}
+.button{
+	height:70px;
+	width:220px;
+	border-radius:50px;
+}
+.circle{
+	height:200px;
+	width:200px;
+	border-radius:50%;
+}
+.outer button, .outer span{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+.outer button{
+	background:#111;
+	color:#f2f2f2;
+	outline:none;
+	border:none;
+	font-size:20px;
+	z-index:9;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	cursor:pointer; 
+}
+.button button{
+	height:60px;
+	width:210px;
+	border-radius:50px;
+}
+.circle button{
+	height:180px;
+	width:180px;
+	border-radius:50%;
+}
+.outer span{
+	height:100%;
+	width:100%;
+	background:inherit;
+}
+.button span{
+	border-radius:50px;
+}
+.circle span{
+	border-radius:50%;
+}
+.outer .button span{
+	border-radius:50px; 
+}
+.outer .circle span{
+	border-radius:50px; 
+}
+outer span:nth-child(1){
+	filter:blur(7px);
+}
+outer span:nth-child(2){
+	filter:blur(14px);
+}
+.outer :hover{
+	background:linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+	animation:rotate 1.5s linear infinite;
+}
+@keyframes rotate{
+	0%{filter:hue-rotate(0deg);}
+	100%{
+		filter:hue-rotate(360deg);
+	}
+}
+@media(max-width:640px){
+.center{
+	flex-wrap:wrap;
+	flex-direction:column;
+}
+.outer{
+	margin:50px 0px;
+}	
+}
+	</style>
+	</head>
+	<body>
+	<br>
+	<div style="Text-align:center;font-family:Times New Roman;color:blue;font-size:20px">
+	<a href="#"><b>•HOME</b></a>•
+	<a href="#"><b>ABOUT</b></a>•
+	<a href="#"><b>CONTACT US</b></a>•
+	<a href="#"><b>PRIVACY POLICY</b></a>•
+	<a href="#"><b>TERMS OF SERVICE</b></a>
+	</div>
+	<br>
+	<br>
+	<div style="text-align:left; color:rgb(160, 23, 103); background-color:rgb(96, 179, 49); font-weight:bold; font-size:35px; font-family:Times New Roman">
+	<a href="https://www.google.com/">GOOGLE.</a>
+	</div>
+	​<p id="demo">The Home Of Champions.</p>
+	<button type="button" onclick="myFunction()">Continue</button>
+	<script>
+	function myFunction() {
+	  document.getElementById("demo").innerHTML = "Where Football Passion Meets Real Competition And All The Football's Greatest Teams And Players Meet And Conquer.";
+	}
+	</script>
+
+	<!-- Changing Background color by using color name -->
+
+	<div style="background-color:rgb(170, 199, 9)">
+		<div class="center">
+			<div class="outer button">
+			<button>THE FOOTBALL ARENA</button>
+			<span></span>
+			<span></span>
+			</div>
+			<div class="outer circle">
+			<button>CAPTAINS AND STARS MEDIA</button>
+			<span></span>
+			<span></span>
+			</div>
+			</div>
+	<p style="font-size:20px;color:blueviolet"><u><b><i>ENJOY THE LATEST FOOTBALL ADVENTURES FROM THE LATEST FOOTBALL NEWS.TAKE A LOOK AT OUR DECORATED GALLLERY BELOW</i></b></u></p>
+	<br>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/ARSENAL%20BEST%20PLAY.MP4">
+	<video src="THE%20FOOTBALL%20ARENA_files/ARSENAL%20BEST%20PLAY.MP4" controls="controls" muted="muted" width="300" height="300">
+	</video>
+	<br>
+	<video src="THE%20FOOTBALL%20ARENA_files/HIGHLIGHTS%20ARSENAL%20VS%20CHELSEA%204-0.mp4" type="video.mp4" controls="controls" muted="muted" width="300" height="300">
+	</video>
+	<br>
+	<br>
+	<audio controls="controls" muted="muted">
+	<source src="THE%20FOOTBALL%20ARENA_files/Kenny%20Chesney%20Trip%20Around%20The%20Sun.mp3" type="audio/mp3">
+	</audio>
+ 	<br>
+	<center>
+	<marquee color="black" direction="left" vspce="100" scrollamount="10" scrolldelay="8" behavior="scroll" overflow="hidden" width="700" hspace="100" height="20" bgcolor="pink"><b>ENGLISH PREMIER LEAGUE</b></marquee>
+	</center>
+	<br>
+	<center>
+	<marquee scrollamount="7" direction="down" width="50%" height="300" bgcolor="skyblue">
+		<center>ARSENAL</center><br>
+		<center>MANCHESTER UNITED</center><br>
+		<center>MANCHESTER CITY</center><br>
+		<center>LEICESTER CITY</center><br>
+		<center>LIVERPOOL FC</center><br>
+		<center>CHELSEA</center><br> 
+		<center>TOTTENHAM</center><br>
+		<center>BRIGHTON AND HOVES</center><br> 
+		<center>CRYSTAL PALACE</center><br>	
+	</marquee>
+	<marquee scrollamount="7" direction="up" width="50%" height="300" bgcolor="skyblue">
+		<center>NEWCASTLE UNITED</center><br>
+		<center>WOLVERMPTOM WANDERERS</center><br>
+		<center>WESTHAM UNITED</center><br>
+		<center>EVERTON FC</center><br>
+		<center>LEEDS UNITED</center><br>
+		<center>BLACKBURN ROVERS</center><br>	
+	</marquee>
+	<br>
+	<br>
+	<marquee color="black" direction="right" vspce="100" scrollamount="10" scrolldelay="8" behavior="scroll" overflow="hidden" width="700" hspace="100" height="20" bgcolor="pink"><b>THE MOST PROLIFIC AND COMPETIVE FOOTBALL LEAGUE IN THE UNIVERSE.</b></marquee>
+	</center>
+	<br>
+	</a><p><a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/ARSENAL%20BEST%20PLAY.MP4">
+	The </a><a href="https://www.premierleague.com/"><abbr title="EPL">EPL</abbr></a> was founded on 20th February 1992.</p>	
+
+	<script type="text/javascript">
+	ALERT("THANK YOU FOR MAKING OUR WEBSITE YOUR CHOICE");
+	</script>
+	<button onclick="getValue()">Get Value</button>
+	<script type="text/javascript">
+	function getValue()
+	{
+	alert(document.getElementById('demo').value);
+	}
+	</script>
+	<p><b>OVERFLOW.</b></p>
+
+	
+
+    <div id="OverFlowTest">Liverpool star rates Arsenal’s title chances.
+                                      
+	Liverpool defender Robertson has given his thoughts on Arsenal’s title 
+chances following the Reds’ 1-0 victory over second-placed Man City on 
+Sunday, which allowed the Gunners to open up a four-point gap over Pep 
+Guardiola’s side.
+	Arteta’s outfit have now won nine of their first 10 Premier League 
+fixtures of the season to put themselves within a real chance of 
+achieving something special this campaign, with Robertson acknowledging 
+how impressive they’ve been so far.
+	He said: "For the last three or four years, it’s always been us and Man
+ City in one and two. Now other teams are getting involved, Arsenal look
+ amazing this season, Tottenham look a different animal, Chelsea are 
+getting going again, Man United. Those teams are trying to close the gap
+ in terms of quality, but we’re too far behind to focus on that just 
+now.ARSENAL could see themselves having to pay up to £57million for 
+Shakhtar winger Mykhaylo Mudryk, who's been dubbed the 'Ukrainian 
+Messi'.
+    The Gunners were linked with the starlet in the summer and could 
+revisit signing him in 2023, but transfer expert Fabrizio Romano says 
+his price could rise from around £45m to nearly £60m.
+	Elsewhere, Arsenal talisman Bukayo Saka missed out on this year's Kopa 
+Trophy at the Ballon d'Or awards ceremony in Paris.
+	The talented youngster came in 8th place while Barcelona wonderkid Gavi
+ took the prize home.
+	Mikel Arteta is still reportedly intent on the signing of Manuel 
+Locatelli, who Arsenal are said to be targeting for January.
+	
+	18TH OCT 2022, 21:47
+	Gabriel's 'best period'
+	
+    Arsenal star Gabriel Magalhaes said he is experiencing "one of the 
+best periods" of his life.
+	Gabriel told the club's official website: "I think it's one of the best
+ periods of my life at the moment.
+	"I'm learning more about life every day with everything that's 
+happening to me. When you become a father, you change in many ways and 
+I'm delighted.
+	"I think the first season was tough, the second went better and the 
+third is just starting now. My ambition is to play in every match.
+	"We know how hard it is to go through a season playing in every game 
+but I'll try to keep taking good care of myself to help Arsenal at all 
+times"
+	
+	18TH OCT 2022, 21:21
+	Ray of light
+	
+	Arsenal legend Ray Parlour left Invincibles team-mate Martin Keown 
+sweating over whether he'd get a Premier League medal in a cruel prank, 
+according to Rami Shaaban.
+	Shaaban told SunSport: "I was on the bench. You know you have to play 
+ten games to get a medal. Obviously, the Invincible season we won it 
+maybe three or four games before the end.
+	"I was on the bench with Ray Parlour and Martin Keown. Ray Parlour is a
+ funny guy… funny dude. We had made two substitutions. He [Arsene 
+Wenger] always put on [Nwankwo] Kanu and Keown so they can get the 10 
+games, they needed these games to get the medal.
+	"Ray Parlour comes to me and says 'Rami, Rami, go and warm up'. I said 
+'No I can't', I'm a shy Swedish guy. I couldn't do it.
+	"So Ray warmed up and took off his jersey and you should've seen 
+Martin's face. He hugged the boss, because he then played, but he was so
+ scared he wouldn't get a medal. [Dennis] Bergkamp was in on it as well.
+ He said 'Rami, come on go up'"
+	
+	18TH OCT 2022, 20:57
+	Arsenal targeting two new signings
+	
+	Arsenal hope to strengthen their squad in the January transfer window 
+by bringing in players in two different positions.
+	According to transfers guru Fabrizio Romano, the Gunners are still 
+invested in finding both a new midfielder and a winger.
+	Romano said: "They will keep going step by step, game by game with the 
+aim to improve the whole project with new contracts, new players in the 
+future and more".
+	However, Romano added that the North Londoners will only make moves for
+ those that they consider to be the right kind of players for the team.
+	The reporter believes that Leicester star Youri Tielemans remains a 
+midfielder that they are considering
+	
+	18TH OCT 2022, 20:29
+	Martinelli contract situation
+	
+	Arsenal star Gabriel Martinelli has two years left on his current deal 
+but insists he is keen to remain for much longer.
+	Martinelli said: "We are talking about a contract so let’s see what 
+happens.
+	"But of course I want to stay. I think this is my best season at 
+Arsenal and I am so happy for this moment.
+	"Everyone can see our hunger and our mentality. We want to win every 
+single game.
+	"I am so happy to be playing alongside players like Gabriel Jesus and 
+Bukayo Saka"
+	
+	Arsenal star Bukayo Saka's sensational year saw him voted the eighth 
+best young player in the world.
+	Saka, 21, was one of a number of the hottest prospects in world 
+football in the running for the Ballon d'Or Kopa trophy on Monday.
+	The prize is given to the best performing players under the age of 21 
+and the winger finished behind a pack of European starlets headed by 
+Barcelona wonderkid Gavi.
+	But the forward's sensational year for European championship runners-up
+ England and current Premier League leaders Arsenal wasn't enough to 
+lead him to the top honour.</div>
+	<br>
+	<!-- --Paragraphs ---->
+	
+	<p1 style="font-size :20px;  color  : purple">
+	This website is an <strong>all inclusive tool </strong>for <i>football <code>updates</code>,<typewriter>fixtures </typewriter>and all drama</i> in the universal football world</p1>
+	<br>
+	
+	<p2>We also provide <a href="http://www.christianoronaldo7.com/" target="_blank"> football sponsorship </a>to
+	amongst the most esteemed football clubs in Europe such as Arsenal, 
+	Manchester united,Chelsea, Liverpool, Manchester City and Liverpool<p2>
+	<br>
+	<p style="color :blue ;font-family:Times New Roman; font-size:20px">I love Arsenal.</p>
+	<p style="font-family : Times New Roman"> Liverpool and Chelsea are also good teams to support.</p>
+	<p style="font-size :20px">Manchester United are rivals to the All-famous Arsenal Football Club.</p>
+	<p style="text-align : center">Arsenal have a reccord of winning the 
+English Premier League Trophy unbeaten.This Great squad that conspired 
+to the Arsenal ubbeaten run victory in the 2003-2004 season is commonlly
+ regarded as the Arsenal Invincivbles.</p>
+	<span style="font-size:20px">English</span> <span style="font-family:Times New Roman"> Premier League </span><span style="font-weight:bold"> is the most competitive </span><span style="color: indigo"> football league </span><span style="color:red"> amongst all others </span><span style="color:purple"> accross the globe.</span>
+	<hr>
+	<br>
+				
+	<!-- Lists -->
+		                                                                      
+	<ol>
+	<li>Football Fixtures</li>
+	<li>Football Results</li>
+	<li>Football updates</li>
+	<li>Football LiveScores</li>
+	<li>Football Transfer News</li>
+	</ol>
+	<br>
+	<dl>
+	<dt><b>HTML</b>	</dt>
+	<dd>HTML stands for Hypertext Mark-Up Language.</dd>
+	<dt><b>HTTP</b></dt>
+	<dd>HTTP Stands For Hypertext Transfer Protocol.</dd>	
+	</dl>
+
+	<!-- Heading -->
+
+	<h style="font-family:Times New Roman; color: blue; font-size: 20px"><b>
+	CONTACT OUR OFFICIALS VIA THE CONTACT INFORMATION BELOW</b>
+	</h>
+
+	<!-- Tables -->
+							
+	<style type="text/css">   
+	table, td {
+	border: 1px solid black;
+	/* cell spacing */
+	border-spacing: 5px;
+	}
+	td {
+	/* cell padding */
+	padding: 5px;
+	}
+	</style>
+	
+	<table>
+
+	<thead>
+	<tr style="background-color:blueviolet">
+	<th>Name</th>
+	<th>Age</th>
+	<th>Email</th>
+	<th>Telephone number</th>
+	<th>Years Of Experience</th>
+	</tr>
+	</thead>
+	<tbody>
+
+	<tr style="background-color:pink">
+	<td>Jasmonize Jaspah</td>
+	<td>20</td>
+	<td>jasmonizejaspahsanchez@gmail.com</td>
+	<td>0757427476</td>
+	<td>2</td>
+	</tr>
+					
+	<tr style="background-color:pink">
+	<td>Lizz Wambui</td>
+	<td>18</td>
+	<td>lizzlozz@gmail.com</td>
+	<td>0711267451</td>
+	<td>1</td>
+	</tr>
+						
+	<tr style="background-color:pink">
+	<td>Ann Risper</td>
+	<td>17</td>
+	<td>annk@gmail.com</td>
+	<td>0797245467</td>
+	<td>0.5</td>
+	</tr>
+											
+	<tr style="background-color:pink">
+	<td>Emmanuel Hudson</td>
+	<td>25
+	</td><td>hudsonemma@gmail.com</td>
+	<td>0724537826</td>
+	<td>3</td>
+	</tr>
+	</tbody>
+	</table>
+	<br>
+	<hr style="height: 20px; width:100% ;color:purple">
+	<br>
+
+	<!-- Forms -->
+	
+	<style type="text/css">
+	label
+	{
+	color:pink;
+	background-color:rgb(160, 56, 108);
+	padding-right:0.5px;
+	padding-left:4px;
+	margin-right:4px;
+	margin-left:4px;
+	border:1px inset rgb(9, 78, 45);
+	border-radius:5px;
+	}
+	</style>
+	<h style="font-family:Times New Roman ;font-size:39px; color:blue ;font-weight:bold"><i>SPONSORSHIP REGISTRATION</i>
+	</h>
+	<form action="process.php" method="post">
+	<div style="width: auto;height:20%">
+	<u><b><i>GENDER:</i></b></u><br>
+	<input type="checkbox" name="selection">Male
+	<br>
+	<input type="checkbox" name="selection">Female
+	<br>
+	<input type="checkbox" name="selection">Others
+	<br>
+	<label>First Name</label><b>:</b>
+	<input type="text" content="firstName" autocapitalize="characters" placeholder="Enter Your First Name">
+	</div>
+	<br>
+	<div>
+	<label>Last Name</label><b>:</b>
+	<input type="text" content="lastName" autocapitalize="characters" placeholder="Enter Your Last Name">
+                                                                        
+                                                                        
+                                                                        
+                             
+	</div>
+	<br>
+	<div>
+	<label>Surname</label><b>:</b>
+	<input type="text" content="surname" placeholder="Enter Your Surname">
+	</div>
+	<br>
+	<div>
+	<label>Username</label><b>:</b>
+	<input type="text" content="username" placeholder="Set A Username">
+	</div>
+	<br>
+	<div>
+	<label>Nickname</label><b>:</b>
+	<input type="text" maxlength="5" content="nickname" placeholder="Enter Known Nickname">
+	</div>
+	<br>
+	<div>
+	<label>Goal</label><b>:</b>
+	<input type="text" minlength"100"="" content="goal" placeholder="Enter Your Goal">
+	</div>
+	<br>
+ 	<div>
+ 	<label>Date Of Birth</label><b>:</b>
+	<input type="Date" content="Birthday" placeholder="Enter Your Birth Date">
+ 	</div>
+ 	<br>
+	<div>
+	<label>Url</label><b>:</b>
+	<input type="Url" content="Url" placeholder="Add Your Homepage">
+	<br>
+	</div>
+	<br>
+ 	<div>
+ 	<label>Gender</label><b>:</b> 
+	<select name="gender">
+ 	<option value="Male" selected="selected">Male</option>
+	<option value="Female">Female</option>
+	<option value="Other">Other</option>
+	</select>
+	</div>
+	<br>
+ 	<div>
+ 	<label>National ID</label><b>:</b>
+	<input type="numbers" content="nationalID" placeholder="Enter ID Number">
+ 	</div>
+	<br>
+ 	<div>
+ 	<label>Password</label><b>:</b>
+	<input type="Numbers" content="Password" maxlength="8" placeholder="Set A Password">
+ 	</div>
+	<br>
+ 	<div>
+ 	<label>Message</label><b>:</b>
+    <textarea ="message"="" rows="10" cols="30" color="purple" placeholder="Type Your Message Here"></textarea>
+	</div>
+	<br>
+	<h style="font-size:20px;font-family:Arial, Helvetica, sans-serif;font-weight:bold;color:rgb(98, 18, 145);background-color:rgb(148, 148, 192)"><b><u><i>CHOOSE YOUR FAVOURITE LANGUAGE.</i></u></b></h>
+	<br>
+	<input type="radio" name="fav_language">
+	<label for="html">HTML</label><br>
+	<input type="radio" name="fav_language">
+	<label for="css">CSS</label><br>
+	<input type="radio" name="fav_language">
+	<label for="javascript">JAVASCRIPT</label> 
+	<br>
+	<hr style="color:rgb(17, 17, 128); width:100%; height:50px">
+	<br>
+	</form>
+	<!-- Button -->
+
+	<button> SUBMIT</button>
+	<br>
+	<hr>
+	<br>
+				
+	<!-- Images -->
+	
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html1.jpg">
+	</a><a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html1.jpg%20width=" 300"="" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html2.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html2.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html3.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html3.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html4.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html4.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html5.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html5.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html6.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html6.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html7.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html7.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html8.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html8.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html9.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html9.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html10.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html10.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html11.jpg">
+	<img src="THE%20FOOTBALL%20ARENA_files/html11.jpg" width="300" height="400">
+	</a>
+	<a href="file:///C:/Users/ICT811/Desktop/CAPTAIN/JASPAH%20C/html12.png">
+	<img src="THE%20FOOTBALL%20ARENA_files/html12.png" width="300" height="400">
+	</a>
+	
+	<!-- Quotations -->
+
+	<div style="text-align:center;font-size:40px;font-family:Times New Roman">
+		
+	<blockquote cite="https://captainsandstarsmedia.com">
+	</blockquote>
+	<i>A well manourished,timely-updated,loaded and uploaded best football website there has ever been in the universe </i>
+	</div>
+	<footer>
+	<a href="https://api.whatsapp.com/send?phone=0757427476">SOCIALIZE WITH ADMIN</a>
+	<address>
+	<a href="https://www.premierleague.com/">Captains And Stars Media</a>
+	</address>
+	<h>© Copyright <span style="color:rgb(70, 11, 104)">Captains And Stars Media</span> @2022•• All rights reserved.</h>
+	</footer>
+	</p2></p2></div>
+		
+	</body></html>
